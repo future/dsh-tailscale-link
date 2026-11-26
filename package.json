@@ -36,6 +36,14 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/future/dsh-tailscale-link.git"
+  },
+  "homepage": "https://github.com/future/dsh-tailscale-link#readme",
+  "bugs": {
+    "url": "https://github.com/future/dsh-tailscale-link/issues"
+  },
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"

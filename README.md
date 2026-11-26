@@ -1,5 +1,7 @@
 # @sparkfuture/dsh-tailscale-link
 
+Source: <https://github.com/future/dsh-tailscale-link> · npm: <https://www.npmjs.com/package/@sparkfuture/dsh-tailscale-link>
+
 Publishes the DSH Web GUI on your tailnet and writes the URL that actually signs
 a browser in — token included — to two owner-only files:
 
