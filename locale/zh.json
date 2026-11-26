@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Tailscale 登入網址",
+    "description": "把 Web GUI 發佈到 tailnet，並把可直接開啟的登入網址寫進 ~/.dsh/tailnet-url.json 與 .txt。",
+    "detail": "docs/DETAIL.md"
+  }
+}

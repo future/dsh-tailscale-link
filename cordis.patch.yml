@@ -1,0 +1,14 @@
+# Standalone bundle layer: one Host-only row that keeps a Tailscale Serve route
+# in front of this Harness, allows that authority through the `/api` fence, and
+# writes the official token login URL to ~/.dsh/tailnet-url.json and .txt.
+# It never touches the Web bundle's rows and never patches third-party code.
+- insert:
+    - id: dsh-tailscale-link-row
+      name: '@sparkfuture/dsh-tailscale-link'
+      config:
+        enabled: true
+        httpsPort: 7259
+        manageServe: true
+        trustAuthority: true
+        alsoBareHost: true      # 只在 443 真的服務本機時才公告免 port 網址
+        serveBareHostPort: false # 想要短網址就設 true，由本外掛自己建立 443 路由

@@ -1,0 +1,9 @@
+# Installed locally for `node test/smoke.mjs`; the bundle's dependencies are
+# declared in package.json and installed by the Host that mounts it.
+node_modules/
+
+# npm pack / publish artefacts
+*.tgz
+
+# Lockfile from the local dev install (this is a bundle, not an app)
+package-lock.json

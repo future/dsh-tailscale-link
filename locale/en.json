@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Tailscale login link",
+    "description": "Publishes the Web GUI on your tailnet and writes the ready-to-open login URL to ~/.dsh/tailnet-url.json and .txt.",
+    "detail": "docs/DETAIL.md"
+  }
+}

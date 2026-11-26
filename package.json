@@ -1,0 +1,53 @@
+{
+  "name": "@sparkfuture/dsh-tailscale-link",
+  "version": "0.3.0",
+  "description": "Publishes the DSH Web GUI on your tailnet and writes the ready-to-open login URL to ~/.dsh/tailnet-url.json and .txt.",
+  "license": "MIT",
+  "author": "sparkfutureai",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./client": "./client.js"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "src",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "tailscale",
+    "tailnet",
+    "serve",
+    "remote-access"
+  ],
+  "engines": {
+    "dsh": "^0.2.3-alpha.2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings-general"
+      ]
+    }
+  },
+  "dependencies": {
+    "qrcode-generator": "^2.0.4"
+  }
+}
