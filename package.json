@@ -1,6 +1,6 @@
 {
   "name": "@sparkfuture/dsh-tailscale-link",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Publishes the DSH Web GUI on your tailnet and writes the ready-to-open login URL to ~/.dsh/tailnet-url.json and .txt.",
   "license": "MIT",
   "author": "sparkfutureai",

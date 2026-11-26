@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.1 — 2026-11-26
+
+- Manifest gains `repository`, `homepage` and `bugs`, so the npm page links back
+  to <https://github.com/future/dsh-tailscale-link>. No behaviour change.
+
 ## 0.3.0 — 2026-11-26
 
 Fixed the 0.2.4 defect where a clean install advertised a port-less URL while
